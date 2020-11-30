@@ -51,7 +51,7 @@ class ManagerController extends Component {
 
     updateUser = (event, firstName, lastName, email, id) => {
 
-        fetch(`http://localhost:3003/api/v1/managers/${this.props.user.id}`, {
+        fetch(`http://localhost:3003/managers/${id}`, {
             method: 'PATCH',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
