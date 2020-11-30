@@ -5,6 +5,7 @@ import App from './App';
 import { BrowserRouter as Router } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'semantic-ui-css/semantic.min.css'
 
 render((
   <Router>
@@ -15,3 +16,10 @@ render((
 ), document.getElementById('root'));
 
 reportWebVitals();
+
+
+
+
+
+
+
