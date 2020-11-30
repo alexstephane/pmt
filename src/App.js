@@ -31,7 +31,8 @@ class App extends Component {
   }
 
   componentDidMount(){
-    if(localStorage.getItem("token")){
+    if (localStorage.getItem("token")) {
+      console.log("token found")
       fetch('http://localhost:3003/api/v1/managers', {
       	headers: {
       		"Authentication" : `Bearer ${localStorage.getItem("token")}`
@@ -63,8 +64,8 @@ class App extends Component {
             } />
           
           
-            <Route path="/manager/:id" render={props =>
-              (<ManagerController {...props} />)
+            <Route path="/manager" render={props =>
+              (<ManagerController {...props} user={this.state.user} />)
             } />
             <Route path="/salesperson/:id" render={props =>
               (<SalesrepController {...props} />)

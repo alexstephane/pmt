@@ -149,7 +149,7 @@ class ManagerView extends Component {
                                                             </Form.Group>
 
                                                             <Form.Group controlId="formGroupEmail">
-                                                                <Form.Label>Last Name</Form.Label>
+                                                                <Form.Label>Email</Form.Label>
                                                                 <Form.Control
                                                                     onChange={this.handleChange}
                                                                     type="email"

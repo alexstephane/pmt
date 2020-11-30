@@ -13,10 +13,11 @@ class ManagerController extends Component {
 
 
     componentDidMount() {
-
-        fetch(`http://localhost:3003/managers/${this.props.match.params.id}`)
+        console.log(this.props)
+        fetch(`http://localhost:3003/api/v1/managers/${this.props.user.id}`)
             .then(r => r.json())
             .then(m => {
+                
                 this.setState({ manager: m })
             })
     }
@@ -50,7 +51,7 @@ class ManagerController extends Component {
 
     updateUser = (event, firstName, lastName, email, id) => {
 
-        fetch(`http://localhost:3003/managers/${id}`, {
+        fetch(`http://localhost:3003/api/v1/managers/${this.props.user.id}`, {
             method: 'PATCH',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -201,7 +202,7 @@ class ManagerController extends Component {
                     "name": a.name,
                     "prospect_id": a.prospect_id,
                     "description": a.description,
-                    "created_by": this.props.match.params.id,
+                    "created_by": this.props.user.id,
                     "status": a.status
                 }
 
