@@ -76,9 +76,13 @@ class AllSalesPersonView extends Component {
                 <tr key={salesperson.id}>
 
                   <td>{salesperson.id}</td>
+                  
                   <td>{salesperson.first_name}</td>
                   <td>{salesperson.last_name}</td>
                   <td>{salesperson.email}</td>
+                  <td> src={salesperson.photo}</td>
+                  
+                  
                   <td>
 
                     {this.state.showHideEdit === true ?

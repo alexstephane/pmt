@@ -201,8 +201,9 @@ class ManagerController extends Component {
                 "activity": {
                     "name": a.name,
                     "prospect_id": a.prospect_id,
+                    "prospect_name": a.prospect_name,
                     "description": a.description,
-                    "created_by": this.props.user.id,
+                    "created_by": this.props.user.first_name,
                     "status": a.status
                 }
 

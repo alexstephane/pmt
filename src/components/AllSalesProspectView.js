@@ -12,6 +12,7 @@ class AllSalesProspectView extends Component {
 
   state = {
     prospect_id: "",
+    prospect_name: "",
     created_by: "",
     //salesperson_id: "",
     showHideEdit: false,
@@ -34,10 +35,12 @@ class AllSalesProspectView extends Component {
 
 
 
-  handleShowHideSPEdit = (id, email, first, last, phone, status) => {
+  handleShowHideSPEdit = (id, email, first, last, phone, status,first_name) => {
     this.setState({
       showHideEdit: !this.state.showHideEdit,
       prospect_id: id,
+      prospect_name: first_name,
+      created_by: first_name,
       email: email,
       lastName: last,
       firstName: first,
@@ -62,11 +65,13 @@ class AllSalesProspectView extends Component {
   }
 
 
-  handleShowHideAddActivity(id) {
+  handleShowHideAddActivity(id, first_name) {
 
     this.setState({
       showHideAddActivity: !this.state.showHideAddActivity,
       prospect_id: id,
+      prospect_name: first_name,
+      created_by: first_name
     })
 
   }
@@ -184,7 +189,7 @@ class AllSalesProspectView extends Component {
                           <Button
                             variant="primary"
                             onClick={(event) => {
-                              this.props.updateProspect(event, this.state.firstName, this.state.lastName, this.state.email, this.state.phone, this.state.status, this.state.prospect_id)
+                              this.props.updateProspect(event, this.state.firstName, this.state.lastName, this.state.email, this.state.phone, this.state.status, this.state.prospect_id,this.state.created_by, this.state.prospect_name)
                               this.handleShowHideSPEdit()
                             }}>
                             Save Changes
@@ -220,6 +225,15 @@ class AllSalesProspectView extends Component {
                                 type="text"
                                 name="status"
                                 value={this.state.status} />
+                            </Form.Group>
+
+                            <Form.Group controlId="formGroupStatus">
+                              <Form.Label>created_by</Form.Label>
+                              <Form.Control
+                                onChange={this.handleChange}
+                                type="text"
+                                name="created_by"
+                                value={this.state.created_by} />
                             </Form.Group>
 
 
