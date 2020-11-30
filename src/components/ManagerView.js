@@ -86,11 +86,11 @@ class ManagerView extends Component {
         return (
             <div>
 
-                <Container>
+                <Container >
                     <Row >
                         <div>
                             <Col>
-                                <Card style={{ width: '25rem' }}>
+                                <Card id="profile" style={{ width: '25rem' }}>
                                     <Card.Img variant="top" src={this.props.manager.photo} />
                                     <Card.Body>
                                         <Card.Title>
@@ -196,7 +196,7 @@ class ManagerView extends Component {
 
                                             <Button
                                                 onClick={this.salespersonList}
-                                                variant="primary"  > All Sales People
+                                                variant="primary" id="allsb" > All Sales People
                                             </Button>
                                             {'  '}
                                             <Button

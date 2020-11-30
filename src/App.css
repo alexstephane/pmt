@@ -1,7 +1,26 @@
 .App {
   text-align: center;
 }
+#allsb{
+  
 
+}
+
+#profile{
+
+  
+  margin-left:-100px !important;
+  width: 20%;
+  margin: 100 auto;
+
+
+
+  
+               
+  
+  
+
+}
 .nav {
   /* display: flex; */
   align-items: center;

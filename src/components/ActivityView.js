@@ -10,6 +10,7 @@ class ActivityView extends Component {
     }
 
     render() {
+        console.log(this.props)
 
         return (
             <div>
@@ -20,6 +21,9 @@ class ActivityView extends Component {
                             <th>#</th>
                             <th>Activity</th>
                             <th>Prospect ID</th>
+                            <th>Prospect name</th>
+                            <th>Created_by</th>
+                          
                             <th>Description</th>
                             <th>Status</th>
                         </tr>
@@ -30,9 +34,12 @@ class ActivityView extends Component {
 
                                 <tr key={activity.id}>
 
-                                    <td>{activity.id}</td>
+                                    <td>{activity.id} </td>
                                     <td>{activity.name}</td>
                                     <td>{activity.prospect_id}</td>
+                                    <td>{activity.prospect_name}</td>
+                                    <td>{activity.created_by}</td>
+                                   
                                     <td>{activity.description}</td>
                                     <td>{activity.status}</td>
 
