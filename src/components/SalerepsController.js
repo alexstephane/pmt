@@ -1,9 +1,6 @@
+
 import React, { Component } from 'react';
 import SalesrepsView from "./SalesrepsView"
-
-
-
-
 
 class SalesrepController extends Component {
 
@@ -17,9 +14,8 @@ class SalesrepController extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props)
 
-        fetch(`http://localhost:3003/salesreps/${this.props.match.params.id}`)
+        fetch(`http://localhost:3003/salesreps/${localStorage.getItem("user")}`)
             .then(r => r.json())
             .then(s => {
                 this.setState({ salesrep: s })
@@ -58,14 +54,12 @@ class SalesrepController extends Component {
             .then(r => r.json())
 
             .then(s => {
-                console.log(s)
 
                 this.allProspect()
             })
     }
 
     deleteProspect(ps_id) {
-        console.log(ps_id)
         if (window.confirm('Are you sure?')) {
             fetch(`http://localhost:3003/prospects/${ps_id}`, {
                 method: 'DELETE',
@@ -81,7 +75,6 @@ class SalesrepController extends Component {
         }
     }
     createProspect = (pro) => {
-        console.log(this.state)
 
         fetch("http://localhost:3003/prospects", {
 
@@ -100,7 +93,6 @@ class SalesrepController extends Component {
 
     }
     createActivity = (a) => {
-        console.log(this.state)
 
         fetch("http://localhost:3003/activities", {
 
@@ -146,3 +138,9 @@ class SalesrepController extends Component {
 }
 
 export default SalesrepController
+
+
+
+
+
+

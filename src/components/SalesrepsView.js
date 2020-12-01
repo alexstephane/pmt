@@ -1,12 +1,10 @@
+
 import React, { Component } from 'react';
 import AllSalesProspectView from "./AllSalesProspectView"
-//import { Button, Figure, Form, ListGroup, Modal, Card, ListGroupItem } from 'react-bootstrap';
 import { Button, Figure, Form, ListGroup, Modal, Card, ListGroupItem, Container, Row, Col } from 'react-bootstrap';
 
 
 class SalesrepsView extends Component {
-
-
 
     state = {
         salespersonList: false,
@@ -18,14 +16,11 @@ class SalesrepsView extends Component {
 
     }
 
-
     handleShowHideSPEdit() {
         this.setState({
             showHide: !this.state.showHide
         })
     }
-
-
 
     salespersonList = () => {
         this.setState({
@@ -47,13 +42,13 @@ class SalesrepsView extends Component {
         return (
 
 
-            <div>
+            <div >
 
 
                 <Container>
                     <Row >
                         <div>
-                            <Col>
+                            <Col id="spp">
                                 <Card style={{ width: '25rem' }}>
                                     <Card.Img variant="top" src={this.props.salesrep.photo} />
                                     <Card.Body>
@@ -72,11 +67,7 @@ class SalesrepsView extends Component {
                                     </ListGroup>
 
                                     <Card.Body>
-                                        <Button
-                                            variant="primary"
-                                            onClick={() => this.handleShowHideSPEdit()}>
-                                            Edit
-                                    </Button>
+                                        
 
                                         {this.state.showHide === true ?
                                             (
@@ -85,7 +76,7 @@ class SalesrepsView extends Component {
                                                     onHide={this.handleShow}>
 
                                                     <Modal.Header closeButton>
-                                                        <Modal.Title>Modal heading</Modal.Title>
+                                                     <Modal.Title>Edit </Modal.Title>
                                                     </Modal.Header>
 
                                                     <Modal.Body>
@@ -97,20 +88,20 @@ class SalesrepsView extends Component {
                                                                     type="text"
                                                                     name="firstName"
                                                                     placeholder="First Name"
-                                                                    value={this.state.firstName || ''}
+                                                                    value={this.state.firstName}
                                                                 />
                                                             </Form.Group>
 
                                                             <Form.Group controlId="formGrouplastName">
-                                                                <Form.Label>Last Name</Form.Label>
-                                                                <Form.Control
-                                                                    onChange={this.handleChange}
-                                                                    type="text"
-                                                                    name="lastName"
-                                                                    placeholder="Last Name"
-                                                                    value={this.state.lastName || ''}
-                                                                />
-                                                            </Form.Group>
+                                                            <Form.Label>First Name</Form.Label>
+                                                            <Form.Control
+                                                                onChange={this.handleChange}
+                                                                type="text"
+                                                                name="firstName"
+                                                                placeholder="First Name"
+                                                                value={this.state.firstName}
+                                                            />
+                                                        </Form.Group>
 
                                                             <Form.Group controlId="formGroupEmail">
                                                                 <Form.Label>Last Name</Form.Label>
@@ -155,10 +146,10 @@ class SalesrepsView extends Component {
                             <Col>
                                 <div>
 
-                                    <div className="mb-2">
+                                    <div id="new"className="mb-2">
                                         <Button
                                             onClick={this.prospectList}
-                                            variant="primary" size="lg" > All Prospects mrg
+                                            variant="primary" size="lg" > All Prospects 
                                             </Button>
                                     </div>
                                 </div>
@@ -215,3 +206,4 @@ class SalesrepsView extends Component {
 }
 
 export default SalesrepsView
+

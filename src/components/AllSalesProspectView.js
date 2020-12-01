@@ -1,8 +1,6 @@
 
-
 import React, { Component } from 'react';
 
-// import ActivityView from "./ActivityView"
 import { Button, Form, Modal, Table } from 'react-bootstrap';
 
 
@@ -14,7 +12,6 @@ class AllSalesProspectView extends Component {
     prospect_id: "",
     prospect_name: "",
     created_by: "",
-    //salesperson_id: "",
     showHideEdit: false,
     showHide: false,
     toggleEditForm: false,
@@ -35,7 +32,7 @@ class AllSalesProspectView extends Component {
 
 
 
-  handleShowHideSPEdit = (id, email, first, last, phone, status,first_name) => {
+  handleShowHideSPEdit = (id, email, first, last, phone, status, first_name) => {
     this.setState({
       showHideEdit: !this.state.showHideEdit,
       prospect_id: id,
@@ -65,13 +62,12 @@ class AllSalesProspectView extends Component {
   }
 
 
-  handleShowHideAddActivity(id, first_name) {
+  handleShowHideAddActivity(id, first_name, last_name) {
 
     this.setState({
       showHideAddActivity: !this.state.showHideAddActivity,
       prospect_id: id,
-      prospect_name: first_name,
-      created_by: first_name
+      prospect_name: first_name + " " + last_name,
     })
 
   }
@@ -189,7 +185,7 @@ class AllSalesProspectView extends Component {
                           <Button
                             variant="primary"
                             onClick={(event) => {
-                              this.props.updateProspect(event, this.state.firstName, this.state.lastName, this.state.email, this.state.phone, this.state.status, this.state.prospect_id,this.state.created_by, this.state.prospect_name)
+                              this.props.updateProspect(event, this.state.firstName, this.state.lastName, this.state.email, this.state.phone, this.state.status, this.state.prospect_id, this.state.created_by, this.state.prospect_name)
                               this.handleShowHideSPEdit()
                             }}>
                             Save Changes
@@ -202,7 +198,7 @@ class AllSalesProspectView extends Component {
                     {
                       <Modal show={this.state.showHideAddActivity}>
                         <Modal.Header closeButton onClick={() => this.handleShowHideAddActivity()}>
-                          <Modal.Title>Create a new Activity</Modal.Title>
+                          <Modal.Title>Create A New Activity</Modal.Title>
 
                         </Modal.Header>
 
@@ -224,18 +220,9 @@ class AllSalesProspectView extends Component {
                                 onChange={this.handleChange}
                                 type="text"
                                 name="status"
-                                value={this.state.status} />
+                                value={this.state.status}
+                              />
                             </Form.Group>
-
-                            <Form.Group controlId="formGroupStatus">
-                              <Form.Label>created_by</Form.Label>
-                              <Form.Control
-                                onChange={this.handleChange}
-                                type="text"
-                                name="created_by"
-                                value={this.state.created_by} />
-                            </Form.Group>
-
 
                             <Form.Group controlId="formGroupDescription">
                               <Form.Label>description</Form.Label>
@@ -243,7 +230,9 @@ class AllSalesProspectView extends Component {
                                 onChange={this.handleChange}
                                 as="textarea"
                                 name="description"
-                                value={this.state.description} />
+                                value={this.state.description}
+                              />
+
                             </Form.Group>
 
                           </Form>
@@ -280,7 +269,7 @@ class AllSalesProspectView extends Component {
                       </Button>{'  '}
 
                       <Button
-                        onClick={() => this.handleShowHideAddActivity(prospect.id)}
+                        onClick={() => this.handleShowHideAddActivity(prospect.id, prospect.first_name, prospect.last_name)}
                         variant="info"
                         size="sm"
                       >

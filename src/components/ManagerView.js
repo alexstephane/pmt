@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import AllSalesPersonView from "./AllSalesPersonView"
 import ActivityView from "./ActivityView"
@@ -121,7 +122,7 @@ class ManagerView extends Component {
                                                     onHide={this.handleShow}>
 
                                                     <Modal.Header closeButton>
-                                                        <Modal.Title>Modal heading</Modal.Title>
+                                                        <Modal.Title>Edit Manager</Modal.Title>
                                                     </Modal.Header>
 
                                                     <Modal.Body>
