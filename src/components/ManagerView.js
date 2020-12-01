@@ -188,15 +188,15 @@ class ManagerView extends Component {
 
                     <Row>
                         <div>
-                            <Col>
+                            <Col id="allsb" >
                                 <div>
                                     <div>
-                                        <ButtonGroup className="mb-2">
+                                        <ButtonGroup className="mb-2" >
 
 
                                             <Button
                                                 onClick={this.salespersonList}
-                                                variant="primary" id="allsb" > All Sales People
+                                                variant="primary"> All Sales People
                                             </Button>
                                             {'  '}
                                             <Button

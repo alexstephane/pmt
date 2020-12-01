@@ -2,24 +2,22 @@
   text-align: center;
 }
 #allsb{
+
+  margin-left:400px !important;
   
-
+  margin-top: -300px;
 }
-
+#allsview{
+  margin-left:315px !important;
+  margin-top: -200px;
+}
 #profile{
 
   
   margin-left:-100px !important;
   width: 20%;
   margin: 100 auto;
-
-
-
-  
-               
-  
-  
-
+  margin-top:150px;
 }
 .nav {
   /* display: flex; */

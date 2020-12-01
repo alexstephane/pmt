@@ -56,7 +56,7 @@ class AllSalesPersonView extends Component {
 
     return (
 
-      <div>
+      <div id={"allsview"}>
         <br></br>
         <Table striped bordered hover>
           <thead>
@@ -80,7 +80,7 @@ class AllSalesPersonView extends Component {
                   <td>{salesperson.first_name}</td>
                   <td>{salesperson.last_name}</td>
                   <td>{salesperson.email}</td>
-                  <td> src={salesperson.photo}</td>
+                  
                   
                   
                   <td>
