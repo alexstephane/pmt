@@ -5,11 +5,10 @@ import SalesrepsView from "./SalesrepsView"
 class SalesrepController extends Component {
 
     state = {
-        salesrep: {
-            manager_id: "",
-            id: ""
-        },
-
+        salesrep: {},
+        manager_id: "",
+          id: "",
+         activities: [],
         prospects: []
     }
 
@@ -24,10 +23,19 @@ class SalesrepController extends Component {
 
     }
 
+    allActivities = () => {
+        fetch(`http://localhost:3003/activities`)
+            .then(r => r.json())
+            .then(a => {
+                this.setState({ activities: a })
+            })
+    }
+
     allProspect = () => {
 
         fetch(`http://localhost:3003/prospects`)
             .then(r => r.json())
+            
             .then(m => {
                 this.setState({ prospects: m })
             })
@@ -126,6 +134,8 @@ class SalesrepController extends Component {
                     deleteProspect={this.deleteProspect}
                     createProspect={this.createProspect}
                     createActivity={this.createActivity}
+                    activities={this.state.activities}
+                    allActivities={this.allActivities}
                 />
 
 

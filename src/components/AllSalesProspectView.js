@@ -1,7 +1,12 @@
 
+
+
+
+
+
 import React, { Component } from 'react';
 
-import { Button, Form, Modal, Table } from 'react-bootstrap';
+import { Button, Form, Modal, Table, ProgressBar } from 'react-bootstrap';
 
 
 
@@ -86,13 +91,26 @@ class AllSalesProspectView extends Component {
   }
 
 
+  getProgress = (status) => {
+    switch (status) {
+      case "open":
+        return 30
+      case "working":
+        return 60
+      case "closed":
+        return 100
+      default:
+        return 30
+    }
 
+
+  }
 
 
 
   render() {
     return (
-      <div>
+      <div id="nike">
         <br></br>
         <Table striped bordered hover>
           <thead>
@@ -102,6 +120,7 @@ class AllSalesProspectView extends Component {
               <th>email</th>
               <th>phone</th>
               <th>status</th>
+              <th>Progress</th>
               <th>Actions</th>
             </tr>
           </thead>
@@ -118,6 +137,7 @@ class AllSalesProspectView extends Component {
                   <td>{prospect.email}</td>
                   <td>{prospect.phone}</td>
                   <td>{prospect.status}</td>
+                  <td><ProgressBar now={this.getProgress(prospect.status)} /></td>
                   <td>
 
                     <Modal show={this.state.showHideEdit}>

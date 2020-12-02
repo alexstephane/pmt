@@ -1,4 +1,6 @@
 
+
+
 import React, { Component } from 'react';
 import { Button, Form, Modal, Col } from 'react-bootstrap';
 
@@ -113,9 +115,6 @@ class Login extends Component {
 }
 
 export default Login
-
-
-
 
 
 

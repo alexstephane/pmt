@@ -3,15 +3,35 @@
 }
 #allsb{
 
-  margin-left:-0px !important;
+  margin-left:-1px !important;
   
   margin-top: -100px;
 }
 #allsview{
-  margin-left:1px !important;
+  margin-left:10px !important;
  
 
   
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+#nv{
+  background-color:#202020 !important;
+  
+}
+#wht{
+  background-color:#202020
+
+  !important;
 }
 
 #spp{
@@ -55,19 +75,30 @@
   50%{ left : 100%;}
   100%{ left: 0;}
 }
+#nike{
+  background-color:#FFFFFF!important;
+
+}
 
 body {
-  background-color:black !important;
+  background-color:#FFD6C!important;
   background-size: cover;
+  
   /* background-image: url(/Users/alexstephane/Desktop/course_WORK/flatiron_course/dc-web-082420/phase_5/phase5_project/pmtfrontend/src/components/istockphoto-1138395421-612x612.jpg) !important; */
+}
+#all{
+  background-color:#707070 !important;
+
 }
 
 #root{
-  /* background-image: url(./texturedbackground.jpg); */
- /* background-color: rgb(39, 39, 38) ; */
- color: rgb(53, 138, 138);
- background-image: url(/Users/alexstephane/Desktop/course_WORK/flatiron_course/dc-web-082420/phase_5/phase5_project/pmtfrontend/src/components/depositphotos_3425755-stock-illustration-smooth-vector-blue-background.jpg); 
- background-size: cover;
+  
+  background-color:#DCE1E3 !important;
+  background-size:500%;
+   
+ 
+
+ 
 
 }
 

@@ -1,4 +1,5 @@
 
+
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
 
@@ -11,7 +12,6 @@ class ActivityView extends Component {
     }
 
     render() {
-        console.log(this.props)
 
         return (
             <div>
@@ -60,7 +60,5 @@ class ActivityView extends Component {
 }
 
 export default ActivityView
-
-
 
 

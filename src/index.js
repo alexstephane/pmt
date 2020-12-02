@@ -8,11 +8,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'semantic-ui-css/semantic.min.css'
 
 render((
-  <Router>
-    <div>
-      <App />
-    </div>
-  </Router>
+
+    
+
+
+
+    <Router>
+      <div>
+        <App />
+      </div>
+    </Router>
+  
 ), document.getElementById('root'));
 
 reportWebVitals();

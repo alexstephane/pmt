@@ -1,7 +1,9 @@
 
 import React, { Component } from 'react';
+
 import AllSalesProspectView from "./AllSalesProspectView"
-import { Button, Figure, Form, ListGroup, Modal, Card, ListGroupItem, Container, Row, Col } from 'react-bootstrap';
+import ActivityView from "./ActivityView"
+import { Button, Figure, Form, ListGroup, Modal,Image, Card, ListGroupItem, Container, Row, Col } from 'react-bootstrap';
 
 
 class SalesrepsView extends Component {
@@ -9,11 +11,32 @@ class SalesrepsView extends Component {
     state = {
         salespersonList: false,
         prospectList: false,
+        activitiesList: false,
         handleShowHideSPEdit: false,
         firstName: '',
         lastName: '',
         email: ''
 
+    }
+
+
+
+    prospectList = () => {
+        this.setState({
+            prospectList: !this.state.prospectList,
+           
+            activitiesList: false
+
+        })
+    }
+
+
+    activitiesList = () => {
+        this.setState({
+            activitiesList: !this.state.activitiesList,
+            prospectList: false,
+           
+        })
     }
 
     handleShowHideSPEdit() {
@@ -45,8 +68,8 @@ class SalesrepsView extends Component {
             <div >
 
 
-                <Container>
-                    <Row >
+                <Container >
+                    <Row id="wht">
                         <div>
                             <Col id="spp">
                                 <Card style={{ width: '25rem' }}>
@@ -65,6 +88,9 @@ class SalesrepsView extends Component {
                                             Email address: {this.props.salesrep.email}
                                         </ListGroupItem>
                                     </ListGroup>
+
+                                   
+                                  
 
                                     <Card.Body>
                                         
@@ -151,6 +177,10 @@ class SalesrepsView extends Component {
                                             onClick={this.prospectList}
                                             variant="primary" size="lg" > All Prospects 
                                             </Button>
+                                            <Button
+                                            onClick={this.activitiesList}
+                                            variant="primary"  size="lg"  > All Activities
+                                        </Button>
                                     </div>
                                 </div>
                             </Col>
@@ -166,9 +196,19 @@ class SalesrepsView extends Component {
                                 updateProspect={this.props.updateProspect}
                                 deleteProspect={this.props.deleteProspect}
                                 createProspect={this.props.createProspect}
-                                createActivity={this.createActivity}
+                                createActivity={this.props.createActivity}
 
 
+                            />) : null
+                        
+                    }
+
+
+                    {
+                        this.state.activitiesList === true ?
+                            (<ActivityView
+                                allActivities={this.props.allActivities}
+                                activities={this.props.activities}
                             />) : null
                     }
 

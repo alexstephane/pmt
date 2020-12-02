@@ -15,10 +15,11 @@ class NavBar extends Component {
 
     return (
 
-      <div>
+      <div id="nv">
         {
           this.props.logged_in === true ? (
             <Navbar
+              id='navm'
               bg="light"
               variant="light"
             >
