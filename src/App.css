@@ -3,16 +3,34 @@
 }
 #allsb{
 
-  margin-left:-1px !important;
+  margin-left:-50px !important;
+  margin-right:-4 !important;
   
   margin-top: -100px;
 }
 #allsview{
-  margin-left:10px !important;
+  margin-left:300px !important;
+  margin-right:-90px !important;
+  margin-top: -59%;
  
 
   
 }
+#new{
+  margin-left:100px !important;
+  margin-top: -50px;
+}
+
+#pb{
+  margin-left:100 !important;
+}
+#ab{
+  margin-left:500px !important;
+
+}
+#asp1{margin-right:-500!important;}
+#asp2{margin-left:1 !important;}
+#ac{margin-left:100 !important;}
 
 .App-header {
   background-color: #282c34;
@@ -29,20 +47,55 @@
   
 }
 #wht{
-  background-color:#202020
+  background-color: #A3BCB6;
+  background-image: url(https://img2.goodfon.com/wallpaper/big/1/51/tekstura-uzor-svetlyy-fon.jpg)!important;
+  background-size:100%!important;
+  margin-left:-100px !important;
+  margin-right:-100px !important;
 
-  !important;
+  margin-top: 6%;
+  
 }
 
 #spp{
 
-  margin-left:-1px !important;
+  
+  margin-left:-8px !important;
   width: 20%;
   margin: 100 auto;
   margin-top:150px;
 
 
 }
+
+#nike{
+  
+  margin-left:300px !important;
+  margin-right:-90px !important;
+  margin-top: -59%;
+  
+
+}
+
+#spa{
+  background-color:#FFFFFF!important;
+  margin-left:300px !important;
+  margin-right:-90px !important;
+  margin-top: -59%;
+
+}
+
+#mvp{
+  background-color: #A3BCB6;
+  background-image: url(https://img2.goodfon.com/wallpaper/big/1/51/tekstura-uzor-svetlyy-fon.jpg)!important;
+  background-size:100%!important;
+  margin-left:-100px !important;
+  margin-right:-100px !important;
+
+  margin-top: 6%;
+
+}
+
 .new{
   margin-top: -100px;
 
@@ -50,7 +103,7 @@
 #profile{
 
   
-  margin-left:-1px !important;
+  margin-left:-px !important;
   width: 20%;
   margin: 100 auto;
   margin-top:150px;
@@ -61,6 +114,14 @@
   min-height:10vh;
   background: rgb(216, 213, 213);
   color: white;
+}
+
+#csm{
+
+  /* margin-left:300px !important;
+  margin-right:-90px !important;
+  margin-top: -59%; */
+
 }
 
 .col{
@@ -75,16 +136,27 @@
   50%{ left : 100%;}
   100%{ left: 0;}
 }
-#nike{
-  background-color:#FFFFFF!important;
+
+/* #login{
+  margin-left:100px !important;
+  
+  
+
+
+} */
+#title{
+  margin-left:-100px !important;
 
 }
 
 body {
-  background-color:#FFD6C!important;
-  background-size: cover;
   
-  /* background-image: url(/Users/alexstephane/Desktop/course_WORK/flatiron_course/dc-web-082420/phase_5/phase5_project/pmtfrontend/src/components/istockphoto-1138395421-612x612.jpg) !important; */
+  margin-top:-5000px;
+  background: rgb(216, 213, 213)!important;
+  background-image: url(https://cdn.hipwallpaper.com/i/42/49/OEbShs.jpg)!important; 
+  
+  background-size:-100%!important;
+
 }
 #all{
   background-color:#707070 !important;
@@ -92,9 +164,9 @@ body {
 }
 
 #root{
-  
-  background-color:#DCE1E3 !important;
-  background-size:500%;
+  background: rgb(216, 213, 213)!important; 
+  background-image: url(https://cdn.hipwallpaper.com/i/42/49/OEbShs.jpg)!important; 
+  background: size 100%!important; 
    
  
 
@@ -117,20 +189,9 @@ body {
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+
+
 
 @keyframes App-logo-spin {
   from {

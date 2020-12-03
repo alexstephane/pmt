@@ -34,6 +34,8 @@ class App extends Component {
 
     return (
       <div>
+        
+        
         <NavBar logged_in={this.state.logged_in} updateUser={this.updateUser} />
         {!this.state.loading ?
           <Switch>

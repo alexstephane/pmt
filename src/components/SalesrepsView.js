@@ -173,11 +173,11 @@ class SalesrepsView extends Component {
                                 <div>
 
                                     <div id="new"className="mb-2">
-                                        <Button
+                                        <Button id="pb"
                                             onClick={this.prospectList}
                                             variant="primary" size="lg" > All Prospects 
                                             </Button>
-                                            <Button
+                                            <Button id="ab"
                                             onClick={this.activitiesList}
                                             variant="primary"  size="lg"  > All Activities
                                         </Button>

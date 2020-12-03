@@ -14,7 +14,7 @@ class ActivityView extends Component {
     render() {
 
         return (
-            <div>
+            <div id="spa">
                 <br></br>
                 <Table striped bordered hover>
                     <thead>

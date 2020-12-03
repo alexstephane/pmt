@@ -16,6 +16,8 @@ class NavBar extends Component {
     return (
 
       <div id="nv">
+        
+       
         {
           this.props.logged_in === true ? (
             <Navbar
@@ -25,6 +27,7 @@ class NavBar extends Component {
             >
 
               <Navbar.Brand
+                
                 href="/login">PMT
                 </Navbar.Brand>
               <Nav className="mr-auto">
@@ -38,6 +41,7 @@ class NavBar extends Component {
               </Nav>
 
             </Navbar>
+            
 
           ) : (
               <Navbar
@@ -50,10 +54,11 @@ class NavBar extends Component {
                 <Nav className="mr-auto">
                   <Nav.Link href="/login">login</Nav.Link>
                 </Nav>
-
+               
               </Navbar>
             )
         }
+        
       </div>
 
 

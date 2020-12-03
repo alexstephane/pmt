@@ -52,7 +52,10 @@ class Login extends Component {
   render() {
 
     return (
-      <Modal.Dialog>
+
+      
+
+      <Modal.Dialog id="login" >
         <Modal.Header>
           <Modal.Title>Login</Modal.Title>
         </Modal.Header>
@@ -109,6 +112,7 @@ class Login extends Component {
         </Modal.Body>
 
       </Modal.Dialog>
+      
 
     )
   }
