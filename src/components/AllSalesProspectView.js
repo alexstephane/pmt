@@ -47,7 +47,8 @@ class AllSalesProspectView extends Component {
       lastName: last,
       firstName: first,
       phone: phone,
-      status: status
+      status: status,
+      
 
     })
 
@@ -120,6 +121,7 @@ class AllSalesProspectView extends Component {
               <th>email</th>
               <th>phone</th>
               <th>status</th>
+              <th>created_by</th>
               <th>Progress</th>
               <th>Actions</th>
             </tr>
@@ -137,6 +139,7 @@ class AllSalesProspectView extends Component {
                   <td>{prospect.email}</td>
                   <td>{prospect.phone}</td>
                   <td>{prospect.status}</td>
+                  <td>{prospect.created_by}</td>
                   <td><ProgressBar now={this.getProgress(prospect.status)} /></td>
                   <td>
 

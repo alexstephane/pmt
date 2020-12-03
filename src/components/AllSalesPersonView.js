@@ -24,7 +24,7 @@ class AllSalesPersonView extends Component {
   }
 
 
-  handleShowHideSPEdit = (id, email, first, last,) => {
+  handleShowHideSPEdit = (id, email,user, password, first, last,) => {
     this.setState({
       showHideEdit: !this.state.showHideEdit,
       salesperson_id: id,

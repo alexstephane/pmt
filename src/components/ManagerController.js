@@ -162,7 +162,7 @@ class ManagerController extends Component {
                     last_name: salesperson.lastName,
                     email: salesperson.email,
                     password: salesperson.password,
-                    
+                    username: salesperson.username,
                     manager_id: this.state.manager.id
                 }
             })

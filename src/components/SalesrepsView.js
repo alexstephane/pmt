@@ -168,9 +168,9 @@ class SalesrepsView extends Component {
                     </Row>
 
                     <Row>
-                        <div>
-                            <Col>
-                                <div>
+                        <div >
+                            <Col id="buttondiv">
+                                <div >
 
                                     <div id="new"className="mb-2">
                                         <Button id="pb"

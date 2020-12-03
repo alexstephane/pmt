@@ -3,7 +3,7 @@
 }
 #allsb{
 
-  margin-left:-50px !important;
+  margin-left:-75px !important;
   margin-right:-4 !important;
   
   margin-top: -100px;
@@ -16,32 +16,40 @@
 
   
 }
-#new{
+/* #new{
   margin-left:100px !important;
   margin-top: -50px;
+} */
+#buttondiv{
+  margin-right:-500 !important;
 }
-
 #pb{
-  margin-left:100 !important;
+  margin-left:-128px !important;
+  margin-top: -150px!important;
+  /* height: 200px; */
+  /* width: 50%; */
+  /* background-color: powderblue; */
 }
 #ab{
-  margin-left:500px !important;
-  /* margin-top: -200px!important;
-  height: 200px;
+  margin-left:100px !important;
+  margin-top: -150px!important; 
+  /* height: 200px;
   width: 50%;
-  background-color: powderblue; */
+  background-color: powderblue;  */
 
 }
 #name{
   margin-left:450px !important;
   font-size: 300%;
   font-style: italic; 
-  color: #707070;
+  color: #EEFBFB;
 
 }
-#asp1{margin-right:-500!important;}
-#asp2{margin-left:1 !important;}
-#ac{margin-left:100 !important;}
+/* #asp1{
+  margin-left:-1000 !important;
+}
+#asp2{margin-left:1!important;}
+#ac{margin-left:500 !important;} */
 
 .App-header {
   background-color: #282c34;
@@ -58,8 +66,8 @@
     
   background-image: url(https://img2.goodfon.com/wallpaper/big/1/51/tekstura-uzor-svetlyy-fon.jpg)!important;
   background-size:100%!important;
-  margin-left:-100px !important;
-  margin-right:-100px !important;
+  margin-left:-140px !important;
+  margin-right:-140px !important;
 
   margin-top: 6%;
   
@@ -78,15 +86,15 @@
 
 #nike{
   
-  margin-left:300px !important;
-  margin-right:-90px !important;
+  margin-left:265px !important;
+  margin-right:-140px !important;
   margin-top: -59%;
   
 
 }
 
 #spa{
-  background-color:#FFFFFF!important;
+  
   margin-left:300px !important;
   margin-right:-90px !important;
   margin-top: -59%;
@@ -97,17 +105,17 @@
   background-color: #A3BCB6;
   background-image: url(https://img2.goodfon.com/wallpaper/big/1/51/tekstura-uzor-svetlyy-fon.jpg)!important;
   background-size:100%!important;
-  margin-left:-100px !important;
-  margin-right:-100px !important;
+  margin-left:-140px !important;
+  margin-right:-140px !important;
 
   margin-top: 6%;
 
 }
 
-.new{
+/* .new{
   margin-top: -100px;
 
-}
+} */
 #profile{
 
   
@@ -139,11 +147,7 @@
   -webkit-animation-name: run;
   -webkit-animation-duration: 5s;
 }     
-@-webkit-keyframes run {
-  0% { left: 0;}
-  50%{ left : 100%;}
-  100%{ left: 0;}
-}
+
 
 /* #login{
   margin-left:100px !important;
@@ -186,31 +190,6 @@ body {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 
 
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.newsp{
-
-  
-}

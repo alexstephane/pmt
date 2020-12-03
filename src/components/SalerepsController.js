@@ -265,6 +265,7 @@ class SalesrepController extends Component {
                 "email": pro.email,
                 "status": pro.status,
                 "phone": pro.phone,
+                "created_by": this.state.salesrep.first_name + " " + this.state.salesrep.last_name,
                 "manager_id": this.state.salesrep.manager_id,
                 "salesrep_id": this.state.salesrep.id,
             })
@@ -284,7 +285,10 @@ class SalesrepController extends Component {
                 "name": a.name,
                 "prospect_id": a.prospect_id,
                 "description": a.description,
-                "status": a.status
+                "status": a.status,
+                "prospect_name": a.prospect_name,
+                "created_by": this.state.salesrep.first_name + " " + this.state.salesrep.last_name,
+                
 
             })
         }).then(m => {
