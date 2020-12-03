@@ -52,8 +52,8 @@ class Login extends Component {
   render() {
 
     return (
-
-      
+      <div>
+      <h1 id="name"> Prospect Managerment Tracker </h1> 
 
       <Modal.Dialog id="login" >
         <Modal.Header>
@@ -113,7 +113,7 @@ class Login extends Component {
 
       </Modal.Dialog>
       
-
+      </div>
     )
   }
 }

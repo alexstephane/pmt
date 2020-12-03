@@ -26,6 +26,17 @@
 }
 #ab{
   margin-left:500px !important;
+  /* margin-top: -200px!important;
+  height: 200px;
+  width: 50%;
+  background-color: powderblue; */
+
+}
+#name{
+  margin-left:450px !important;
+  font-size: 300%;
+  font-style: italic; 
+  color: #707070;
 
 }
 #asp1{margin-right:-500!important;}
@@ -42,12 +53,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-#nv{
-  background-color:#202020 !important;
-  
-}
+
 #wht{
-  background-color: #A3BCB6;
+    
   background-image: url(https://img2.goodfon.com/wallpaper/big/1/51/tekstura-uzor-svetlyy-fon.jpg)!important;
   background-size:100%!important;
   margin-left:-100px !important;

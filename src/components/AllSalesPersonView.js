@@ -93,7 +93,7 @@ class AllSalesPersonView extends Component {
 
                         <Modal show={this.state.showHideEdit}>
                           <Modal.Header>
-                            <Modal.Title>Edit</Modal.Title>
+                            <Modal.Title>Edit Sales</Modal.Title>
                           </Modal.Header>
                           <Modal.Body>
                             <Form>
