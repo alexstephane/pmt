@@ -41,7 +41,7 @@ class App extends Component {
         {!this.state.loading ?
           <Switch>
              
-            <Route exact path="/pmt" render={() => <Redirect to="/process.env.https://alexstephane.github.io/pmt" />} />
+            <Route exact path="/pmt" render={() => <Redirect to="/https://alexstephane.github.io/pmt" />} />
           
             <Route exact path="/login" render={() => this.state.user !== null && this.state.user.title === 'manager' ?
               <Redirect to='/manager/' /> : this.state.user !== null && this.state.user.title === 'Salesperson' ?
