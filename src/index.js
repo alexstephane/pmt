@@ -13,12 +13,11 @@ render((
 
 
 
-  <Router>
+  <Router >
   
-    <div>
     
         <App />
-      </div>
+      
     </Router>
   
 ), document.getElementById('root'));

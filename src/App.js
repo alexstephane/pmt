@@ -40,8 +40,9 @@ class App extends Component {
         <NavBar logged_in={this.state.logged_in} updateUser={this.updateUser} />
         {!this.state.loading ?
           <Switch>
+             
+            <Route exact path="/pmt" render={() => <Redirect to="/process.env.https://alexstephane.github.io/pmt" />} />
           
-            <Route exact path="/" render={() => <Redirect to="/login" />} />
             <Route exact path="/login" render={() => this.state.user !== null && this.state.user.title === 'manager' ?
               <Redirect to='/manager/' /> : this.state.user !== null && this.state.user.title === 'Salesperson' ?
                 <Redirect to='/salesperson/' /> :

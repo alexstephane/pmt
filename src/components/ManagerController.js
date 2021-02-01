@@ -16,7 +16,7 @@ class ManagerController extends Component {
 
 
     componentDidMount() {
-        fetch(`http://localhost:3003/managers/${localStorage.getItem("user")}`)
+        fetch(`https://calm-dawn-96008.herokuapp.com/managers/${localStorage.getItem("user")}`)
             .then(r => r.json())
             .then(m => {
 
@@ -25,7 +25,7 @@ class ManagerController extends Component {
     }
 
     allActivities = () => {
-        fetch(`http://localhost:3003/activities`)
+        fetch(`https://calm-dawn-96008.herokuapp.com/activities`)
             .then(r => r.json())
             .then(a => {
                 this.setState({ activities: a })
@@ -34,7 +34,7 @@ class ManagerController extends Component {
 
     allSalespeople = () => {
 
-        fetch(`http://localhost:3003/salesreps`)
+        fetch(`https://calm-dawn-96008.herokuapp.comsalesreps`)
             .then(r => r.json())
             .then(m => {
                 this.setState({ salespeople: m })
@@ -43,7 +43,7 @@ class ManagerController extends Component {
 
     allProspect = () => {
 
-        fetch(`http://localhost:3003/prospects`)
+        fetch(`https://calm-dawn-96008.herokuapp.com/prospects`)
             .then(r => r.json())
             .then(m => {
                 this.setState({ prospects: m })
@@ -52,7 +52,7 @@ class ManagerController extends Component {
 
     updateUser = (event, firstName, lastName, email, id) => {
 
-        fetch(`http://localhost:3003/managers/${id}`, {
+        fetch(`https://calm-dawn-96008.herokuapp.com/managers/${id}`, {
             method: 'PATCH',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -71,7 +71,7 @@ class ManagerController extends Component {
 
     updateSalesRep = (event, firstName, lastName, email, id) => {
 
-        fetch(`http://localhost:3003/salesreps/${id}`, {
+        fetch(`https://calm-dawn-96008.herokuapp.com/salesreps/${id}`, {
             method: 'PATCH',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -93,7 +93,7 @@ class ManagerController extends Component {
 
     updateProspect = (event, firstName, lastName, phone, email, status, id) => {
 
-        fetch(`http://localhost:3003/prospects/${id}`, {
+        fetch(`https://calm-dawn-96008.herokuapp.com/prospects/${id}`, {
 
             method: 'PATCH',
             headers: { "Content-Type": "application/json" },
@@ -119,7 +119,7 @@ class ManagerController extends Component {
 
     deleteRep(sp_id) {
         if (window.confirm('Are you sure?')) {
-            fetch(`http://localhost:3003/salesreps/${sp_id}`, {
+            fetch(`https://calm-dawn-96008.herokuapp.com/salesreps/${sp_id}`, {
                 method: 'DELETE',
                 header: {
                     'Accept': 'application/json',
@@ -136,7 +136,7 @@ class ManagerController extends Component {
 
     deleteProspect(ps_id) {
         if (window.confirm('Are you sure?')) {
-            fetch(`http://localhost:3003/prospects/${ps_id}`, {
+            fetch(`https://calm-dawn-96008.herokuapp.com/prospects/${ps_id}`, {
                 method: 'DELETE',
                 header: {
                     'Accept': 'application/json',
@@ -152,7 +152,7 @@ class ManagerController extends Component {
 
     createSalesperson = (salesperson) => {
 
-        fetch("http://localhost:3003/salesreps", {
+        fetch("https://calm-dawn-96008.herokuapp.com/salesreps", {
 
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -174,7 +174,7 @@ class ManagerController extends Component {
 
     createProspect = (pro) => {
 
-        fetch("http://localhost:3003/prospects", {
+        fetch("https://calm-dawn-96008.herokuapp.com/prospects", {
 
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -194,7 +194,7 @@ class ManagerController extends Component {
 
     createActivity = (a) => {
 
-        fetch("http://localhost:3003/activities", {
+        fetch("https://calm-dawn-96008.herokuapp.com/activities", {
 
             method: "POST",
             headers: { "Content-Type": "application/json" },
