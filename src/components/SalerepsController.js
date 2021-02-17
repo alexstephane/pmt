@@ -7,14 +7,7 @@ import SalesrepsView from "./SalesrepsView"
 
 class SalesrepController extends Component {
 
-    // state = {
-    //     salesrep: {
-    //         manager_id: "",
-    //         id: ""
-    //     },
-
-    //     prospects: []
-    // }
+    
     state = {
                 salesrep: {},
                 manager_id: "",

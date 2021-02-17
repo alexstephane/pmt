@@ -1,11 +1,6 @@
 import React from "react";
 import { Card, Image } from "semantic-ui-react";
 
-/* props: {
-  avatar: 'someURL',
-  username: 'chandler Bing',
-  bio: 'i like eggs'
-} */
 
 const Welcome = (props) => {
   let { avatar, username, bio } = props
